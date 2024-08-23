@@ -15,7 +15,7 @@ Initially 20 pokemons will be rendered on the screen but as the user reaches the
 There is a search bar which will do a local search of pokemons based on the search text entered by the user. On clicking each pokemon, the app will navigate to the selected pokemon's detailed page.
 
 #### *Frameworks used:*
-- Alamofire: To handle the networking task seamlessly
+- Alamofire: To handle the networking task seamlessly. Alamofire fire will abstract many details of networking calls, JSON serialization, response validation, parameter encoding. These alongwith with error handling are done automatically by Alamofire. Makes the code more readable and maintainable when the app scales
 
 #### *Supported OS:*
 iOS 16
