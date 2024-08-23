@@ -46,7 +46,6 @@
 		1BA6F4A32C7768F900072F4D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA6F4A22C7768F900072F4D /* Enums.swift */; };
 		1BA6F4A42C7768F900072F4D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA6F4A22C7768F900072F4D /* Enums.swift */; };
 		1BA6F4A62C77694000072F4D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA6F4A52C77694000072F4D /* ErrorView.swift */; };
-		1BA6F4A72C77694000072F4D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA6F4A52C77694000072F4D /* ErrorView.swift */; };
 		1BA6F4A92C792B0B00072F4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA6F4A82C792B0B00072F4D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +124,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B57B34D2C7946CF007BDB75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B9497912C70FC37009F5AB1 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B57B34E2C7946E1007BDB75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B9497D12C710A9B009F5AB1 /* Pokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B57B34F2C7946E7007BDB75 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1B9497CD2C710808009F5AB1 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1B57B3502C794709007BDB75 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				1B9497BC2C70FCAF009F5AB1 /* Model */,
+				1B57B3512C794730007BDB75 /* View */,
+				1B9497BB2C70FCA9009F5AB1 /* ViewModel */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		1B57B3512C794730007BDB75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B9497BD2C70FCE1009F5AB1 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B57B3522C794777007BDB75 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				1BA6F4A52C77694000072F4D /* ErrorView.swift */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
 		1B9497832C70FC37009F5AB1 = {
 			isa = PBXGroup;
 			children = (
@@ -151,9 +200,9 @@
 				1BA6F4AA2C7935B400072F4D /* Info.plist */,
 				1BA6F4A12C7768EC00072F4D /* Enums */,
 				1B9497C42C7103AF009F5AB1 /* NetworkLayer */,
-				1B9497BC2C70FCAF009F5AB1 /* Model */,
-				1B9497BB2C70FCA9009F5AB1 /* ViewModel */,
-				1B9497B92C70FC96009F5AB1 /* View */,
+				1B9497B92C70FC96009F5AB1 /* HomeView */,
+				1B57B3502C794709007BDB75 /* DetailView */,
+				1B57B3522C794777007BDB75 /* ErrorView */,
 				1B94978F2C70FC37009F5AB1 /* PokemonApp.swift */,
 				1B9497932C70FC39009F5AB1 /* Assets.xcassets */,
 				1B9497952C70FC39009F5AB1 /* Preview Content */,
@@ -189,20 +238,19 @@
 			path = PokemonUITests;
 			sourceTree = "<group>";
 		};
-		1B9497B92C70FC96009F5AB1 /* View */ = {
+		1B9497B92C70FC96009F5AB1 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				1B9497912C70FC37009F5AB1 /* HomeView.swift */,
-				1B9497BD2C70FCE1009F5AB1 /* DetailView.swift */,
-				1BA6F4A52C77694000072F4D /* ErrorView.swift */,
+				1B57B34E2C7946E1007BDB75 /* Model */,
+				1B57B34D2C7946CF007BDB75 /* View */,
+				1B57B34F2C7946E7007BDB75 /* ViewModel */,
 			);
-			path = View;
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 		1B9497BB2C70FCA9009F5AB1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				1B9497CD2C710808009F5AB1 /* HomeViewModel.swift */,
 				1B9497CF2C710A6A009F5AB1 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
@@ -211,7 +259,6 @@
 		1B9497BC2C70FCAF009F5AB1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1B9497D12C710A9B009F5AB1 /* Pokemon.swift */,
 				1B9497D32C710ACA009F5AB1 /* PokemonDetail.swift */,
 				1BA6F4952C77678300072F4D /* Stat.swift */,
 				1BA6F4982C77679800072F4D /* TypeElement.swift */,
@@ -406,7 +453,6 @@
 				1BA6F48B2C73784500072F4D /* AppEnvironment.swift in Sources */,
 				1BA6F48F2C73E44200072F4D /* Pokemon.swift in Sources */,
 				1BA6F4892C7377F200072F4D /* MockNetworkService.swift in Sources */,
-				1BA6F4A72C77694000072F4D /* ErrorView.swift in Sources */,
 				1BA6F4912C73F3B700072F4D /* DetailViewModel.swift in Sources */,
 				1B9497A12C70FC39009F5AB1 /* HomeViewModelTests.swift in Sources */,
 				1BA6F49A2C77679800072F4D /* TypeElement.swift in Sources */,
