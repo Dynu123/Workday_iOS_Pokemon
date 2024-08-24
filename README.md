@@ -8,6 +8,8 @@ To create an iOS mobile application that will fetch data from the public https:/
 - The app will also allow selection of a pokemon to view it's details such as name, height, weight, type, images and statistics. 
 - Users can also search for a pokemon to view its details. 
 
+#### *Running the app:*
+- Open the file named 'Pokemon.xcodeproj' from the folder Pokemon. The source code opens up. Then find a triangular button on the top left. Click on this button to build the app. THe app will launch. To find the app on the device at a later time look for the app with name "Pokemon"
 
 #### *On launching:*
 The app loads by displaying the splash screen which then lands on the home page. The home page will then list the pokemon names. 
